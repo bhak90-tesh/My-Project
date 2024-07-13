@@ -1,0 +1,79 @@
+.marquee-container {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    animation: marquee 15s linear infinite; /* Adjust duration as needed */
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+
+  /* App.css */
+
+/* Center the container vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Set max width for the form container */
+.form-container {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+/* Style for individual form fields */
+.text-field {
+  width: 100%;
+  margin-bottom: 16px; /* Add spacing between form fields */
+}
+
+/* Style for buttons */
+.button {
+  margin-top: 16px; /* Add spacing between form fields and buttons */
+}
+
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('pexels-pixabay-531880.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover; /* Cover ensures the image covers the entire background */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  /* Optional: Set a font family */
+  color: #333; /* Optional: Set a default text color */
+}
+
+
+.submission-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  animation: fadeInOut 3s ease-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
